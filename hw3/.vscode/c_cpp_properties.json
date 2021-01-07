@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        /*
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-x64"
+        }
+        */
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}\\windows\\*",
+                "${workspaceFolder}\\windows\\include\\*",
+                "D:\\MinGW\\include\\boost\\**",
+                "D:\\MinGW\\include\\**"
+            ],
+            "defines": [],
+            "compilerPath": "D:\\MinGW\\bin\\g++.exe",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
