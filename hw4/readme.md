@@ -13,7 +13,7 @@
 ## 設定
 flashfxp : 開啟本地端的視窗 view -> single connection layout
 ## coding:
-bind的reply 回傳的是 socks開的隨機開的Port(等待dst連過來) ip就寫0000就行
+bind的reply 回傳的是 socks隨機開的Port(等待dst連過來) ip就寫0000就行
 
 
 ## part1 (socks server)
@@ -25,7 +25,8 @@ bind的reply 回傳的是 socks開的隨機開的Port(等待dst連過來) ip就�
 ## part2
 set ftp proxy(need ftp client has support proxy)
 
-## part3  (socks client)
+## part3  (這邊是寫socks client(傳socks 的request和handle回傳的socks reply))
+
 1. run np_single_golden  in np_single/
 2. ./socks_server 7778
 2. /http_server 7777
@@ -33,3 +34,9 @@ set ftp proxy(need ftp client has support proxy)
 4. fill in table
 ## part4 firewall
 socks.conf will block not permit connect
+
+
+
+## 說明
+* ftp activate mode:
+https://matis.pixnet.net/blog/post/22918494
