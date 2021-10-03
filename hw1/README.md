@@ -1,5 +1,5 @@
 ## debug
-* if we didn't clean the redundant pipes fd ,other child which read from this pipe will not exit,
+* if we didn't clean the redundant pipes fd, the child which read from this pipe will not exit,
 because it think it still have stdin will come in
 
 * argv ,envp need terminated by NULL , or it will let execve error
@@ -13,4 +13,10 @@ so correct usage:if((cin >> num )) < 0 ){}
 * you need to recompile program in bin with command folder .cpp file
 * make
 * ./npshell
+
+## 知識
+* 處理zombie 的方法
+正確來說因該要建立一個表格，然後紀錄開了甚麼Process,然後一個一個去wait
+## 主要重點
+* 處理pipe, zombie process等問題
 
